@@ -64,7 +64,7 @@ const Signup = () => {
 
     setLoading(true);
     try {
-      await axios.post("http://localhost:5001/api/auth/register", formData);
+      await axios.post("https://course-management-system-2-8hmu.onrender.com/auth/register", formData);
 
       toast.success("✨ Account created successfully!");
       toast("Redirecting to login...", { icon: "⏳" });
