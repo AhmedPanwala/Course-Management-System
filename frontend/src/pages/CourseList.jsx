@@ -12,7 +12,7 @@ const CourseList = () => {
   const [purchasedCourses, setPurchasedCourses] = useState(new Set());
 
   const getCourse = async () => {
-    const res = await axios.get("http://localhost:5001/api/courses");
+    const res = await axios.get("https://course-management-system-2-8hmu.onrender.com/courses");
     setCourses(res.data);
     
     // Initialize cart items from localStorage
