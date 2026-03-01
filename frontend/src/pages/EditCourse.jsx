@@ -69,7 +69,7 @@ const EditCourse = () => {
     try {
       console.log("Submitting course data:", formData); // Debug log
       const response = await axios.put(
-        `http://localhost:5001/api/courses/${formData._id}`,
+        `https://course-management-system-2-8hmu.onrender.com/courses/${formData._id}`,
         formData
       );
       console.log("Update response:", response); // Debug log
