@@ -55,7 +55,7 @@ const AddCourse = () => {
 
     setLoading(true)
     try {
-      let res = await axios.post("http://localhost:5001/api/courses", addCourses)
+      let res = await axios.post("https://course-management-system-2-8hmu.onrender.com/courses", addCourses)
 
       if (res.status === 201) {
         toast.success(" Course successfully added!")
