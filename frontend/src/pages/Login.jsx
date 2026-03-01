@@ -58,7 +58,7 @@ const Login = () => {
     setLoading(true);
     try {
       const res = await axios.post(
-        "http://localhost:5001/api/auth/login",
+        "https://course-management-system-2-8hmu.onrender.com/auth/login",
         formData
       );
 
